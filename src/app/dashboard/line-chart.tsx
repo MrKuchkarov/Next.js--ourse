@@ -1,5 +1,5 @@
 import React from 'react';
-function LineChart(props) {
+function LineChart() {
     return (
         <h1>Line Chart</h1>
     );
