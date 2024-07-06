@@ -1,12 +1,12 @@
 import React from 'react';
 import Card from "@/app/components/card";
 
-const RevenueMetric = () => {
+const DefaultUserAnalytics = () => {
     return (
         <Card>
-            Revenue Metrics
+            User default analytics
         </Card>
     );
 };
 
-export default RevenueMetric;
+export default DefaultUserAnalytics;
