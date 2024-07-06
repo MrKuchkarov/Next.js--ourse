@@ -6,7 +6,9 @@ const Notifications = () => {
     return (
         <Card >
             <div>Notifications</div>
-            <Link href='/complex-dashboard/archived'>Archived</Link>
+            <div>
+                <Link href='/complex-dashboard/archived'>Archived</Link>
+            </div>
         </Card>
     );
 };

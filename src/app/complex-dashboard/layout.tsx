@@ -1,12 +1,15 @@
 import React, {ReactNode} from 'react';
-const DashboardLayout = ({children, users, revenue, notifications  }:
+const DashboardLayout = ({children, users, revenue, notifications, login  }:
                              {children: ReactNode,
                                  users: ReactNode,
                                  revenue: ReactNode,
                                  notifications: ReactNode,
+                                 login: ReactNode,
                              }) => {
-    return (
-        <>
+    const isLoggedIn = false;
+
+    return isLoggedIn ? (
+        <div>
             <div>
                 {children}
             </div>
@@ -19,7 +22,9 @@ const DashboardLayout = ({children, users, revenue, notifications  }:
                     {notifications}
                 </div>
             </div>
-        </>
+        </div>
+    ) : (
+       login
     );
 };
 
